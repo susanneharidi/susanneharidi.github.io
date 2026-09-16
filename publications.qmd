@@ -1,5 +1,6 @@
 ---
 title: "Publications"
+description: "Journal articles, preprints, talks and posters by Susanne Haridi, with links to PDFs, code and videos."
 listing:
   - id: journal-articles
     contents: publications.yml

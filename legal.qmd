@@ -1,5 +1,6 @@
 ---
 title: "Legal notice & Privacy"
+description: "Legal notice and privacy statement for the personal website of Susanne Haridi."
 ---
 
 ## Legal notice

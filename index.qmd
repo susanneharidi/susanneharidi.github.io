@@ -2,6 +2,10 @@
 title: "Susanne Haridi"
 subtitle: "Postdoctoral Researcher · LMU Munich"
 pagetitle: "Susanne Haridi"
+description: "Susanne Haridi is a postdoctoral researcher at LMU Munich working on computational models of human cognition, long-term memory retrieval and benchmarks for cognitive science."
+include-in-header:
+  - _includes/google-verification.html
+  - _includes/person-schema.html
 image: files/headshot.jpg
 about:
   template: trestles

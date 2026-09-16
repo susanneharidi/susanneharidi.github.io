@@ -1,5 +1,6 @@
 ---
 title: "Curriculum Vitae"
+description: "Academic CV of Susanne Haridi: positions, education, fellowships, teaching and service."
 ---
 
 <!--
