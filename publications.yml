@@ -1,0 +1,160 @@
+# Publications, preprints, talks and posters
+# -------------------------------------------------------------------
+# Every entry starts with "- type:". To add one, copy a similar block,
+# paste it anywhere in this file and edit the values. Order does not
+# matter: each section on the site is sorted by date (newest first).
+#
+# Required fields
+#   type:      journal | preprint | conference
+#   date:      YYYY-MM-DD (publication date, or first day of the conference)
+#   title:     "..."
+#   authors:   "Last, F.; Last, F. M.; ..."  (separate authors with ";")
+#              Add * directly after a name for equal contribution: "Haridi, S.*"
+#   venue:     journal / conference name (shown in italics)
+#
+# Optional fields (a button only appears when the field is filled in)
+#   details:          volume(issue), pages, or conference location
+#   kind:             Poster | Talk | GAC (co-organizer) ...  (conference entries)
+#   selected:         true  -> also shown on the home page
+#   pdf:              link to a legal full-text PDF
+#   preprint:         link to a preprint
+#   preprint-label:   text for the preprint button (default "Preprint")
+#   abstract:         link to a published conference abstract
+#   poster:           files/posters/<file>.pdf  (upload the PDF to files/posters/)
+#   slides:           link or files/slides/<file>.pdf
+#   code:             link to the code repository
+#   video:            link to a video
+#   preregistration:  one link, or a list of links (numbered buttons)
+#   website:          any other web page
+#   doi:              10.xxxx/...  (without https://doi.org/)
+#   note:             short extra remark shown under the entry
+# -------------------------------------------------------------------
+
+
+# ===== Journal articles =====
+
+- type: journal
+  selected: true
+  date: 2025-08-07
+  title: "Context size and set size effects: The relevance of specific cues when searching long-term memory"
+  authors: "Haridi, S.; Schulz, E.; Thalmann, M."
+  venue: "Computational Brain & Behavior"
+  details: "9(1), 1–33"
+  pdf: https://link.springer.com/content/pdf/10.1007/s42113-025-00255-7.pdf
+  code: https://github.com/susanneharidi/memoryscaling
+  preregistration:
+    - https://osf.io/uqjn3
+    - https://osf.io/83khx
+    - https://osf.io/7ejhc
+  doi: 10.1007/s42113-025-00255-7
+
+- type: journal
+  selected: true
+  date: 2025-07-02
+  title: "A foundation model to predict and capture human cognition"
+  authors: "Binz, M.; Akata, E.; Bethge, M.; Brändle, F.; Callaway, F.; Coda-Forno, J.; Dayan, P.; Demircan, C.; Eckstein, M. K.; Éltető, N.; Griffiths, T. L.; Haridi, S.; Jagadish, A. K.; Ji-An, L.; Kipnis, A.; Kumar, S.; Ludwig, T.; Mathony, M.; Mattar, M.; Modirshanechi, A.; Nath, S. S.; Peterson, J. C.; Rmus, M.; Russek, E. M.; Saanum, T.; Schubert, J. A.; Schulze Buschoff, L. M.; Singhi, N.; Sui, X.; Thalmann, M.; Theis, F. J.; Truong, V.; Udandarao, V.; Voudouris, K.; Wilson, R.; Witte, K.; Wu, S.; Wulff, D. U.; Xiong, H.; Schulz, E."
+  venue: "Nature"
+  details: "644(8078), 1002–1009"
+  pdf: https://www.nature.com/articles/s41586-025-09215-4.pdf
+  code: https://github.com/marcelbinz/Llama-3.1-Centaur-70B
+  doi: 10.1038/s41586-025-09215-4
+
+- type: journal
+  selected: true
+  date: 2023-09-23
+  title: "The scaling of mental computation in a sorting task"
+  authors: "Haridi, S.; Wu, C. M.; Dasgupta, I.; Schulz, E."
+  venue: "Cognition"
+  details: "241, 105605"
+  # When the accepted manuscript is on PsyArXiv as version 2, change the
+  # link below to https://osf.io/preprints/psyarxiv/8hqtv_v2 and delete
+  # the preprint-label line.
+  preprint: https://osf.io/preprints/psyarxiv/8hqtv_v1
+  preprint-label: "Preprint (pre-review)"
+  code: https://github.com/susanneharidi/mental-sorting
+  video: https://www.youtube.com/watch?v=-lfN0yvbH4M
+  doi: 10.1016/j.cognition.2023.105605
+
+
+# ===== Preprints =====
+
+- type: preprint
+  date: 2026-05-08
+  title: "Post-training makes large language models less human-like"
+  authors: "Binz, M.; Akata, E.; Almaatouq, A.; Alsobay, M.; Ariasov, O.; Brändle, F.; Broska, D.; Burton, J. W.; Busch, N.; Callaway, F.; Cheung, V.; Christian, B.; Coda-Forno, J.; Demircan, C.; Dentella, V.; Eckstein, M. K.; Éltető, N.; Franke, M.; Griffiths, T. L.; Günther, F.; Haridi, S.; Hellmann, S.; Herytash, S.; Hof, L.; Holton, E.; Hoxha, I.; Hussain, Z.; Jagadish, A.; Kara, E.; Kriegmair, V.; Leivada, E.; Ji-An, L.; Ludwig, T.; Maier, M.; Mattar, M. G.; Mathony, M.; Modirshanechi, A.; Na, R.; Nadverniuk, M.; Nasioulas, A.; Nath, S. S.; Niemeyer, H.; Nussenbaum, K.; Olschewski, S.; Pachur, T.; Palminteri, S.; Petrenco, A.; Phaneuf-Hadd, C. V.; Pirrone, A.; Rausch, M.; Raveling, L.; Reddy, S.; Rmus, M.; Russek, E. M.; Saanum, T.; Sandbrink, K.; Schiekiera, L.; Schubert, J. A.; Schulze Buschoff, L. M.; Singhi, N.; Somerville, L. H.; Spektor, M. S.; Sui, X.; Summerfield, C.; Thalmann, M.; Thoma, A. I.; Tikhomirova, T.; Truong, V.; Tsvilodub, P.; Voudouris, K.; Witte, K.; Wu, S.; Wulff, D. U.; Xiong, H.-D.; Xu, S.; Ying, L.; Zhang, X.; Zhu, J.-Q.; Schulz, E."
+  venue: "arXiv"
+  details: "2605.07632"
+  pdf: https://arxiv.org/pdf/2605.07632
+  code: https://github.com/marcelbinz/Psych-201
+
+
+# ===== Talks, posters & organized sessions =====
+
+- type: conference
+  kind: Poster
+  date: 2026-08-03
+  title: "Determinants of context-dependent memory effects in humans"
+  authors: "Hedrich, N.*; Haridi, S.*; Schuck, N."
+  venue: "Conference on Cognitive Computational Neuroscience (CCN 2026)"
+  details: "New York, USA"
+  poster: files/posters/2026-ccn-poster.pdf
+
+- type: conference
+  kind: Poster
+  date: 2026-03-15
+  title: "Contextualising context effects in memory retrieval"
+  authors: "Haridi, S.*; Hedrich, N.*; Schulz, E.; Schuck, N."
+  venue: "Conference of Experimental Psychologists (TeaP 2026)"
+  details: "Tübingen, Germany"
+  poster: files/posters/2026-teap-poster.pdf
+
+- type: conference
+  kind: "GAC (co-organizer)"
+  date: 2025-08-13
+  title: "What benchmarks are useful for cognitive science?"
+  authors: "Haridi, S.; Binz, M.; Carrasco-Davis, R.; Domine, C.; Grant, E.; Modirshanechi, A."
+  venue: "Generative Adversarial Collaboration, CCN 2025"
+  details: "Amsterdam, Netherlands"
+  website: https://2025.ccneuro.org/gac/
+
+- type: conference
+  kind: Poster
+  date: 2024-07-24
+  title: "Semantic similarity and context cues alleviate set-size effects on long-term memory retrieval times"
+  authors: "Haridi, S.; Thalmann, M.; Schulz, E."
+  venue: "Annual Meeting of the Cognitive Science Society (CogSci 2024)"
+  details: "Rotterdam, Netherlands"
+  abstract: https://escholarship.org/uc/item/5pq4m46q
+  poster: files/posters/2024-cogsci-poster.pdf
+  code: https://github.com/susanneharidi/memoryscaling
+  note: "Published abstract: “The effect of set size on long-term-memory retrieval times in cued recall”"
+
+- type: conference
+  kind: Talk
+  date: 2024-07-19
+  title: "Semantic similarity and context cues alleviate set-size effects on long-term memory retrieval times"
+  authors: "Haridi, S.; Thalmann, M.; Schulz, E."
+  venue: "Annual Meeting of the Society for Mathematical Psychology (MathPsych/ICCM 2024)"
+  details: "Tilburg, Netherlands"
+  code: https://github.com/susanneharidi/memoryscaling
+
+- type: conference
+  kind: Poster
+  date: 2023-08-24
+  title: "Simulating the scaling of long-term memory retrieval"
+  authors: "Haridi, S.; Thalmann, M.; Schulz, E."
+  venue: "Conference on Cognitive Computational Neuroscience (CCN 2023)"
+  details: "Oxford, UK"
+  abstract: https://2023.ccneuro.org/proceedings/0000784.pdf
+  code: https://github.com/susanneharidi/memoryscaling
+
+- type: conference
+  kind: Poster
+  date: 2021-07-26
+  title: "How does mental sorting scale?"
+  authors: "Haridi, S.; Wu, C. M.; Dasgupta, I.; Schulz, E."
+  venue: "Annual Meeting of the Cognitive Science Society (CogSci 2021)"
+  details: "Online"
+  abstract: https://escholarship.org/uc/item/5hx3386j
+  code: https://github.com/susanneharidi/mental-sorting
+  video: https://www.youtube.com/watch?v=-lfN0yvbH4M

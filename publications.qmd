@@ -1,0 +1,47 @@
+---
+title: "Publications"
+listing:
+  - id: journal-articles
+    contents: publications.yml
+    template: _templates/publications.ejs
+    include:
+      type: journal
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+  - id: preprints
+    contents: publications.yml
+    template: _templates/publications.ejs
+    include:
+      type: preprint
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+  - id: conferences
+    contents: publications.yml
+    template: _templates/publications.ejs
+    include:
+      type: conference
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+---
+
+::: pub-legend
+My name is shown in **bold**; <sup>\*</sup> marks equal contribution. See also my [Google Scholar](https://scholar.google.com/citations?user=D9ujv3IAAAAJ) profile.
+:::
+
+## Journal articles
+
+::: {#journal-articles}
+:::
+
+## Preprints
+
+::: {#preprints}
+:::
+
+## Talks, posters & organized sessions
+
+::: {#conferences}
+:::

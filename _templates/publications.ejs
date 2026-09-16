@@ -1,0 +1,123 @@
+<%
+/*
+  Listing template for publications.yml.
+
+  Adapted from pub-listing.ejs in drganghe/quarto-academic-website-template
+  (https://github.com/drganghe/quarto-academic-website-template).
+
+  MIT License
+  Copyright (c) 2025 Gang He
+
+  Permission is hereby granted, free of charge, to any person obtaining a copy
+  of this software and associated documentation files (the "Software"), to deal
+  in the Software without restriction, including without limitation the rights
+  to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+  copies of the Software, and to permit persons to whom the Software is
+  furnished to do so, subject to the following conditions:
+
+  The above copyright notice and this permission notice shall be included in all
+  copies or substantial portions of the Software.
+
+  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+  IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+  FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+  AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+  LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+  SOFTWARE.
+*/
+
+// Author name that is shown in bold.
+const ME = /^Haridi,/;
+// Author lists longer than this are shortened.
+const MAX_AUTHORS = 10;
+
+const esc = function (s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
+};
+
+const formatAuthor = function (name) {
+  const equal = name.endsWith("*");
+  const base = equal ? name.slice(0, -1).trim() : name;
+  const html = ME.test(base) ? "<strong>" + esc(base) + "</strong>" : esc(base);
+  return equal ? html + "<sup>&#42;</sup>" : html;
+};
+
+const splitAuthors = function (authors) {
+  return String(authors || "").split(";").map(function (s) { return s.trim(); }).filter(Boolean);
+};
+
+const formatAuthors = function (authors) {
+  const names = splitAuthors(authors);
+  if (names.length > MAX_AUTHORS) {
+    const keep = [0, 1, names.length - 1];
+    const mine = names.findIndex(function (n) { return ME.test(n); });
+    if (mine >= 0 && keep.indexOf(mine) === -1) keep.push(mine);
+    keep.sort(function (a, b) { return a - b; });
+    let text = "";
+    let previous = -1;
+    keep.forEach(function (i) {
+      if (previous >= 0) text += i - previous > 1 ? ", … " : ", ";
+      text += formatAuthor(names[i]);
+      previous = i;
+    });
+    return text;
+  }
+  const formatted = names.map(formatAuthor);
+  if (formatted.length <= 1) return formatted.join("");
+  if (formatted.length === 2) return formatted[0] + " &amp; " + formatted[1];
+  return formatted.slice(0, -1).join(", ") + ", &amp; " + formatted[formatted.length - 1];
+};
+
+const button = function (href, icon, label, cls) {
+  return '<a href="' + esc(href) + '" class="pub-btn ' + cls + '" target="_blank" rel="noopener">' +
+    '<i class="bi bi-' + icon + '" aria-hidden="true"></i> ' + esc(label) + "</a>";
+};
+%>
+
+<%
+// Note: in Quarto listing templates the "equals" tag writes its value as-is,
+// while the "minus" tag HTML-escapes it. Text from publications.yml is escaped with esc().
+%>
+<div class="pub-listing list">
+<% for (const item of items) {
+  const yearMatch = String(item.date || "").match(/\d{4}/);
+  const year = yearMatch ? yearMatch[0] : "";
+  const title = String(item.title || "");
+  const titleEnd = /[.?!]$/.test(title) ? "" : ".";
+  const authorCount = splitAuthors(item.authors).length;
+
+  // The citation is built as one line: blank lines inside the HTML would be
+  // read as Markdown paragraph breaks by Quarto.
+  let citation = "";
+  if (item.kind) citation += '<span class="pub-kind">' + esc(item.kind) + "</span> ";
+  citation += '<span class="pub-authors">' + formatAuthors(item.authors) + "</span> (" + esc(year) + "). ";
+  citation += '<span class="pub-title">' + esc(title) + "</span>" + titleEnd + " ";
+  citation += '<em class="pub-venue">' + esc(item.venue || "") + "</em>";
+  if (item.details) citation += ", " + esc(item.details);
+  citation += ".";
+  if (authorCount > MAX_AUTHORS) citation += ' <span class="pub-author-count">(' + authorCount + " authors)</span>";
+  const buttons = [];
+  if (item.pdf) buttons.push(button(item.pdf, "file-earmark-pdf", "PDF", "btn-pdf"));
+  if (item.preprint) buttons.push(button(item.preprint, "file-earmark-text", item["preprint-label"] || "Preprint", "btn-preprint"));
+  if (item.abstract) buttons.push(button(item.abstract, "file-text", "Abstract", "btn-abstract"));
+  if (item.poster) buttons.push(button(item.poster, "easel", "Poster", "btn-poster"));
+  if (item.slides) buttons.push(button(item.slides, "file-slides", "Slides", "btn-slides"));
+  if (item.code) buttons.push(button(item.code, "github", "Code", "btn-code"));
+  if (item.video) buttons.push(button(item.video, "youtube", "Video", "btn-video"));
+  if (item.preregistration) {
+    const prereg = [].concat(item.preregistration);
+    prereg.forEach(function (href, i) {
+      buttons.push(button(href, "clipboard-check", prereg.length > 1 ? "Prereg. " + (i + 1) : "Preregistration", "btn-prereg"));
+    });
+  }
+  if (item.website) buttons.push(button(item.website, "box-arrow-up-right", "Website", "btn-website"));
+  if (item.doi) buttons.push(button("https://doi.org/" + item.doi, "link-45deg", "DOI", "btn-doi"));
+%>
+<div class="pub-item" <%= metadataAttrs(item) %>>
+  <p class="pub-citation"><%= citation %></p>
+  <% if (item.note) { %><p class="pub-note"><%= esc(item.note) %></p><% } %>
+  <% if (buttons.length) { %><p class="pub-links"><%= buttons.join(" ") %></p><% } %>
+</div>
+<% } %>
+</div>

@@ -1,0 +1,30 @@
+---
+title: "Legal notice & Privacy"
+---
+
+## Legal notice
+
+Information pursuant to § 5 DDG (Digitale-Dienste-Gesetz):
+
+Dr. Susanne Haridi\
+Department of Psychology\
+Ludwig-Maximilians-Universität München\
+Akademiestr. 7\
+80799 München\
+Germany
+
+Email: [susanne.haridi@psy.lmu.de](mailto:susanne.haridi@psy.lmu.de)
+
+This is a personal website. It is not an official website of LMU Munich, and LMU Munich is not responsible for its content.
+
+## Privacy
+
+**Controller.** Dr. Susanne Haridi (contact details above).
+
+**Hosting.** This website is hosted on GitHub Pages, a service of GitHub, Inc., 88 Colin P. Kelly Jr. Street, San Francisco, CA 94107, USA. When you visit a page, GitHub processes technical data such as your IP address in order to deliver the page and keep the service secure. Details are in the [GitHub General Privacy Statement](https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement). The legal basis is Art. 6(1)(f) GDPR (legitimate interest in providing a secure and reliable website).
+
+**Visitor statistics.** To see how often pages are visited, this website uses [GoatCounter](https://www.goatcounter.com). GoatCounter does not use cookies and does not store personal data. It records aggregated information such as the page visited, the referring website, browser, screen size and country. According to GoatCounter, the data is stored on servers in Finland and Germany. See the [GoatCounter privacy policy](https://www.goatcounter.com/help/privacy). The legal basis is Art. 6(1)(f) GDPR (legitimate interest in anonymous visitor statistics).
+
+**No other tracking or embedded content.** This website does not set cookies, does not load fonts, videos or scripts from other providers (apart from GoatCounter), and does not embed social media content. Links to other websites (for example YouTube, LinkedIn or X) only transfer data to those services when you click them.
+
+**Your rights.** You have the right to access, rectify and erase your personal data, to restrict or object to its processing, and to data portability. You also have the right to lodge a complaint with a data protection supervisory authority, for example the Bavarian Data Protection Authority (Bayerisches Landesamt für Datenschutzaufsicht).

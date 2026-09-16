@@ -1,0 +1,168 @@
+---
+title: "Curriculum Vitae"
+---
+
+<!--
+Each entry is a block between two ":::" lines.
+The first line is the date; everything after the empty line is the description.
+-->
+
+## Positions
+
+::: cv-entry
+Since Oct 2025
+
+**Postdoctoral Researcher**\
+Chair of Computational Modeling in Psychology (Prof. Christopher Donkin), Department of Psychology, LMU Munich
+:::
+
+::: cv-entry
+Oct 2024 – Sep 2025
+
+**Doctoral Researcher**\
+Institute for Human-Centered AI, Helmholtz Munich (Dr. Eric Schulz)
+:::
+
+::: cv-entry
+Oct 2021 – Sep 2024
+
+**Doctoral Researcher**\
+Max Planck Institute for Biological Cybernetics, Tübingen (Dr. Eric Schulz, Prof. Klaus Scheffler)
+:::
+
+::: cv-entry
+Sep 2020 – Sep 2021
+
+**Lab rotations**, Max Planck School of Cognition\
+Dr. Eric Schulz and Prof. Peter Dayan (Max Planck Institute for Biological Cybernetics, Tübingen); Prof. Ralph Hertwig (Max Planck Institute for Human Development, Berlin)
+:::
+
+## Education
+
+::: cv-entry
+2020 – 2026
+
+**PhD (Dr. rer. nat.)**, Graduate Training Centre of Neuroscience, University of Tübingen, and Max Planck School of Cognition; awarded April 2026\
+Thesis: *How does human cognition scale? The adaptive computational and memory complexity of human cognition*\
+Supervisors: Dr. Eric Schulz, Prof. Klaus Scheffler
+:::
+
+::: cv-entry
+2017 – 2020
+
+**MSc Mind and Brain** (Brain track), Berlin School of Mind and Brain, Humboldt-Universität zu Berlin\
+Thesis research at Harvard Medical School, Department of Neurobiology (Prof. Richard Born): *Structure of the visual surround in a patch of primary visual cortex*
+:::
+
+::: cv-entry
+2013 – 2017
+
+**BSc Psychology**, University of Würzburg\
+Exchange year at Chuo University, Tokyo, Japan (2015 – 2016)
+:::
+
+## Earlier research experience
+
+::: cv-entry
+Oct 2018 – Feb 2019
+
+**Research intern**, social cognition lab (Prof. Isabel Dziobek), Humboldt-Universität zu Berlin
+:::
+
+::: cv-entry
+Mar 2018 – Dec 2018
+
+**Research assistant** (fMRI and EEG), Max Planck Institute for Human Development, Berlin
+:::
+
+::: cv-entry
+Jul 2016 – Jul 2017
+
+**Student research assistant**, EEG laboratory, Department of Differential Psychology and Personality Psychology, University of Würzburg
+:::
+
+## Fellowships
+
+::: cv-entry
+2020 – 2025
+
+**Doctoral fellow**, Max Planck School of Cognition
+:::
+
+::: cv-entry
+2016 – 2020
+
+**Scholar**, German Academic Scholarship Foundation (Studienstiftung des deutschen Volkes)
+:::
+
+## Teaching & mentoring
+
+::: cv-entry
+Since 2025
+
+**Seminar in Statistics I & II** (taught in German), School Psychology program, LMU Munich
+:::
+
+::: cv-entry
+&nbsp;
+
+Supervised a student research assistant
+:::
+
+::: cv-entry
+Oct 2014 – Feb 2015
+
+**Statistics tutor**, University of Würzburg
+:::
+
+## Service
+
+::: cv-entry
+2025
+
+**Co-organizer**, Generative Adversarial Collaboration *What benchmarks are useful for cognitive science?*, Conference on Cognitive Computational Neuroscience (CCN 2025)
+:::
+
+::: cv-entry
+2020 – 2021
+
+**Student representative**, Max Planck School of Cognition
+:::
+
+## Summer schools
+
+::: cv-entry
+2024
+
+Summer School on Computational Modelling of Cognition in a Social Context (CMCSC)
+:::
+
+::: cv-entry
+2022
+
+Barcelona Summer School for Advanced Modeling of Behavior (BAMB!)
+:::
+
+::: cv-entry
+2022
+
+Brains, Minds & Machines Summer Course (CBMM)
+:::
+
+## Skills
+
+::: cv-entry
+Programming
+
+Python, R, MATLAB, JavaScript
+:::
+
+::: cv-entry
+Languages
+
+German (native), English, Japanese (intermediate)
+:::
+
+## Publications
+
+See the [Publications](publications.qmd) page for journal articles, preprints, talks and posters.

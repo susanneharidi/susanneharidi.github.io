@@ -1,0 +1,36 @@
+project:
+  type: website
+  resources:
+    - files/posters/*.pdf
+
+website:
+  title: "Susanne Haridi"
+  description: "Postdoctoral researcher in computational cognitive science at LMU Munich."
+  site-url: https://susanneharidi.github.io
+  favicon: files/favicon.png
+  open-graph: true
+  search: false
+  navbar:
+    left:
+      - href: index.qmd
+        text: About
+      - href: publications.qmd
+        text: Publications
+      - href: cv.qmd
+        text: CV
+  page-footer:
+    left: "© 2026 Susanne Haridi"
+    right:
+      - text: "Legal notice & Privacy"
+        href: legal.qmd
+
+format:
+  html:
+    theme:
+      light: [default, styles/light.scss]
+      dark: [default, styles/dark.scss]
+    css: styles/site.css
+    # No MathJax: the site has no formulas, and this avoids loading scripts from CDNs.
+    html-math-method: plain
+    # GoatCounter visitor statistics (see _includes/goatcounter.html)
+    include-after-body: _includes/goatcounter.html

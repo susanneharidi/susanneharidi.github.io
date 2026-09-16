@@ -1,0 +1,66 @@
+---
+title: "Susanne Haridi"
+subtitle: "Postdoctoral Researcher · LMU Munich"
+pagetitle: "Susanne Haridi"
+image: files/headshot.jpg
+about:
+  template: trestles
+  image: files/headshot.jpg
+  image-shape: round
+  image-width: 14em
+  links:
+    - icon: google-scholar
+      text: Google Scholar
+      href: https://scholar.google.com/citations?user=D9ujv3IAAAAJ
+    - icon: orcid
+      text: ORCID
+      href: https://orcid.org/0000-0002-5738-2236
+    - icon: github
+      text: GitHub
+      href: https://github.com/susanneharidi
+    - icon: linkedin
+      text: LinkedIn
+      href: https://www.linkedin.com/in/susanne-haridi-4015a5263/
+    - icon: bluesky
+      text: Bluesky
+      href: https://bsky.app/profile/susanneharidi.bsky.social
+    - icon: twitter-x
+      text: X
+      href: https://x.com/HaridiSusanne
+    - icon: youtube
+      text: YouTube
+      href: https://www.youtube.com/@SusannesScholarlySnippets
+    - icon: osf
+      text: OSF
+      href: https://osf.io/2h8yq/
+listing:
+  id: selected-publications
+  contents: publications.yml
+  template: _templates/publications.ejs
+  include:
+    selected: true
+  sort: "date desc"
+  sort-ui: false
+  filter-ui: false
+---
+
+I am a postdoctoral researcher in the [Computational Modeling in Psychology](https://www.lmu.de/psy/en/chairs/computational-modeling-in-psychology/) group at LMU Munich. I study how human cognition copes with complexity: how the time and memory people need grow as problems get bigger, and how people use structure and context to keep that growth in check. To answer these questions, I combine behavioral experiments and reaction-time analyses with computational models.
+
+Beyond these topics, I am also interested in how we can make science more cumulative: For this purpose I am currently looking into how benchmarks can be used to summarise and standardise research results.
+
+Before joining LMU, I did my PhD with Eric Schulz at the Max Planck Institute for Biological Cybernetics and Helmholtz Munich, as part of the Max Planck School of Cognition. I also run the YouTube channel [Susanne's Scholarly Snippets](https://www.youtube.com/@SusannesScholarlySnippets), where researchers summarize their projects in a few minutes.
+
+## Contact
+
+::: contact-list
+- <i class="bi bi-envelope" aria-hidden="true"></i>[susanne.haridi@psy.lmu.de](mailto:susanne.haridi@psy.lmu.de)
+- <i class="bi bi-building" aria-hidden="true"></i>Department of Psychology, LMU Munich, Akademiestr. 7, 80799 München, Germany
+- <i class="bi bi-person-badge" aria-hidden="true"></i>[LMU profile page](https://www.lmu.de/psy/en/persons/contact-page/susanne-haridi-5d9b872c.html)
+:::
+
+## Selected publications
+
+::: {#selected-publications}
+:::
+
+[All publications, talks and posters →](publications.qmd)

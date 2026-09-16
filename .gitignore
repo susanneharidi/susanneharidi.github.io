@@ -1,0 +1,11 @@
+# Quarto build output
+/.quarto/
+/_site/
+
+# Private files that must never be published
+*.docx
+private/
+
+.DS_Store
+
+**/*.quarto_ipynb
