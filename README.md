@@ -11,6 +11,7 @@ Every push to `main` rebuilds the site and publishes it through GitHub Actions
 | Bio, profile links, contact, selected publications | `index.qmd` |
 | All publications, preprints, talks and posters | `publications.yml` |
 | CV (including teaching and service) | `cv.qmd` |
+| PDF CV: header, research interests, section order, layout | `_cv/cv.typ` |
 | Legal notice and privacy statement | `legal.qmd` |
 | Menu, footer, theme | `_quarto.yml` |
 | Headshot, favicon, poster PDFs | `files/` |
@@ -20,7 +21,7 @@ Every push to `main` rebuilds the site and publishes it through GitHub Actions
 ## Common edits (all possible in GitHub's web editor)
 
 **Add a paper, preprint, talk or poster:** open `publications.yml`, copy an entry
-of the same kind (everything from `- type:` to the next blank line), paste it,
+of the same `type` (journal, preprint, talk or poster) (everything from `- type:` to the next blank line), paste it,
 and change the values. The field list at the top of the file explains every
 option. Entries are sorted by `date` automatically. Set `selected: true` to show
 an entry on the home page as well.
@@ -34,6 +35,14 @@ PsyArXiv, follow the comment in that entry in `publications.yml`.
 
 **Edit the CV:** each entry in `cv.qmd` is a block between two `:::` lines; the
 first line is the date, the rest is the description.
+
+**PDF CV:** `files/Susanne_Haridi_CV.pdf` is built automatically from `cv.qmd`
+and `publications.yml` every time the site is rendered, so it never needs to be
+uploaded or edited by hand (it is not stored in the repository). The header
+(contact details, research interests) and the order of the sections in the PDF
+are set at the top of `_cv/cv.typ`. A new `##` section in `cv.qmd` appears at
+the end of the PDF until it is added to the order list there. The PDF is made
+with Typst, which comes with Quarto, so nothing extra needs to be installed.
 
 ## Preview locally
 

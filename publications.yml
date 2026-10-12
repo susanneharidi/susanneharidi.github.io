@@ -5,7 +5,8 @@
 # matter: each section on the site is sorted by date (newest first).
 #
 # Required fields
-#   type:      journal | preprint | conference
+#   type:      journal | preprint | talk | poster
+#              (organized sessions such as the GAC count as talks)
 #   date:      YYYY-MM-DD (publication date, or first day of the conference)
 #   title:     "..."
 #   authors:   "Last, F.; Last, F. M.; ..."  (separate authors with ";")
@@ -14,7 +15,8 @@
 #
 # Optional fields (a button only appears when the field is filled in)
 #   details:          volume(issue), pages, or conference location
-#   kind:             Poster | Talk | GAC (co-organizer) ...  (conference entries)
+#   kind:             label shown before the entry, e.g. "Invited talk" or
+#                     "GAC (co-organizer)"
 #   selected:         true  -> also shown on the home page
 #   pdf:              link to a legal full-text PDF
 #   preprint:         link to a preprint
@@ -88,10 +90,9 @@
   code: https://github.com/marcelbinz/Psych-201
 
 
-# ===== Talks, posters & organized sessions =====
+# ===== Talks, organized sessions & posters =====
 
-- type: conference
-  kind: Poster
+- type: poster
   date: 2026-08-03
   title: "Determinants of context-dependent memory effects in humans"
   authors: "Hedrich, N.*; Haridi, S.*; Schuck, N."
@@ -99,8 +100,7 @@
   details: "New York, USA"
   poster: files/posters/2026-ccn-poster.pdf
 
-- type: conference
-  kind: Poster
+- type: poster
   date: 2026-03-15
   title: "Contextualising context effects in memory retrieval"
   authors: "Haridi, S.*; Hedrich, N.*; Schulz, E.; Schuck, N."
@@ -108,7 +108,7 @@
   details: "Tübingen, Germany"
   poster: files/posters/2026-teap-poster.pdf
 
-- type: conference
+- type: talk
   kind: "GAC (co-organizer)"
   date: 2025-08-13
   title: "What benchmarks are useful for cognitive science?"
@@ -117,8 +117,7 @@
   details: "Amsterdam, Netherlands"
   website: https://2025.ccneuro.org/gac/
 
-- type: conference
-  kind: Poster
+- type: poster
   date: 2024-07-24
   title: "Semantic similarity and context cues alleviate set-size effects on long-term memory retrieval times"
   authors: "Haridi, S.; Thalmann, M.; Schulz, E."
@@ -129,8 +128,7 @@
   code: https://github.com/susanneharidi/memoryscaling
   note: "Published abstract: “The effect of set size on long-term-memory retrieval times in cued recall”"
 
-- type: conference
-  kind: Talk
+- type: talk
   date: 2024-07-19
   title: "Semantic similarity and context cues alleviate set-size effects on long-term memory retrieval times"
   authors: "Haridi, S.; Thalmann, M.; Schulz, E."
@@ -138,8 +136,7 @@
   details: "Tilburg, Netherlands"
   code: https://github.com/susanneharidi/memoryscaling
 
-- type: conference
-  kind: Poster
+- type: poster
   date: 2023-08-24
   title: "Simulating the scaling of long-term memory retrieval"
   authors: "Haridi, S.; Thalmann, M.; Schulz, E."
@@ -148,8 +145,7 @@
   abstract: https://2023.ccneuro.org/proceedings/0000784.pdf
   code: https://github.com/susanneharidi/memoryscaling
 
-- type: conference
-  kind: Poster
+- type: poster
   date: 2021-07-26
   title: "How does mental sorting scale?"
   authors: "Haridi, S.; Wu, C. M.; Dasgupta, I.; Schulz, E."

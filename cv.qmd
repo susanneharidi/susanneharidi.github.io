@@ -6,7 +6,13 @@ description: "Academic CV of Susanne Haridi: positions, education, fellowships, 
 <!--
 Each entry is a block between two ":::" lines.
 The first line is the date; everything after the empty line is the description.
+
+The PDF version (files/Susanne_Haridi_CV.pdf) is built from this file and
+publications.yml whenever the site is rendered. Its header and section order
+are set in _cv/cv.typ.
 -->
+
+[<i class="bi bi-file-earmark-pdf" aria-hidden="true"></i> Download CV as PDF](files/Susanne_Haridi_CV.pdf){.btn .btn-outline-primary .btn-sm .cv-download}
 
 ## Positions
 
@@ -52,6 +58,7 @@ Supervisors: Dr. Eric Schulz, Prof. Klaus Scheffler
 2017 – 2020
 
 **MSc Mind and Brain** (Brain track), Berlin School of Mind and Brain, Humboldt-Universität zu Berlin\
+Grade: 1.0 (German scale; 1.0 = best)\
 Thesis research at Harvard Medical School, Department of Neurobiology (Prof. Richard Born): *Structure of the visual surround in a patch of primary visual cortex*
 :::
 
@@ -59,6 +66,8 @@ Thesis research at Harvard Medical School, Department of Neurobiology (Prof. Ric
 2013 – 2017
 
 **BSc Psychology**, University of Würzburg\
+Grade: 1.1 (German scale; 1.0 = best)\
+Thesis: *Regulation of acute pain perception: distraction vs. acceptance*\
 Exchange year at Chuo University, Tokyo, Japan (2015 – 2016)
 :::
 

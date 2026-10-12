@@ -18,11 +18,19 @@ listing:
     sort: "date desc"
     sort-ui: false
     filter-ui: false
-  - id: conferences
+  - id: talks
     contents: publications.yml
     template: _templates/publications.ejs
     include:
-      type: conference
+      type: talk
+    sort: "date desc"
+    sort-ui: false
+    filter-ui: false
+  - id: posters
+    contents: publications.yml
+    template: _templates/publications.ejs
+    include:
+      type: poster
     sort: "date desc"
     sort-ui: false
     filter-ui: false
@@ -42,7 +50,12 @@ My name is shown in **bold**; <sup>\*</sup> marks equal contribution. See also m
 ::: {#preprints}
 :::
 
-## Talks, posters & organized sessions
+## Talks & organized sessions
 
-::: {#conferences}
+::: {#talks}
+:::
+
+## Posters
+
+::: {#posters}
 :::

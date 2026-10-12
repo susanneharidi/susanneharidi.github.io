@@ -124,6 +124,14 @@
 
 /* ----- CV ----- */
 
+.cv-download {
+  margin-bottom: 1.5rem;
+}
+
+.cv-download .bi {
+  margin-right: 0.3rem;
+}
+
 .cv-entry {
   display: grid;
   grid-template-columns: 11.5rem 1fr;

@@ -2,6 +2,10 @@
 /.quarto/
 /_site/
 
+# Built from cv.qmd and publications.yml by _cv/build.lua
+/_cv/cv-content.typ
+/files/Susanne_Haridi_CV.pdf
+
 # Private files that must never be published
 *.docx
 private/

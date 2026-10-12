@@ -1,7 +1,10 @@
 project:
   type: website
+  # Builds files/Susanne_Haridi_CV.pdf from cv.qmd and publications.yml
+  pre-render: _cv/build.lua
   resources:
     - files/posters/*.pdf
+    - files/Susanne_Haridi_CV.pdf
 
 website:
   title: "Susanne Haridi"

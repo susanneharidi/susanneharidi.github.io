@@ -13,6 +13,9 @@ about:
   image-shape: round
   image-width: 14em
   links:
+    - icon: file-earmark-pdf
+      text: CV (PDF)
+      href: files/Susanne_Haridi_CV.pdf
     - icon: google-scholar
       text: Google Scholar
       href: https://scholar.google.com/citations?user=D9ujv3IAAAAJ
